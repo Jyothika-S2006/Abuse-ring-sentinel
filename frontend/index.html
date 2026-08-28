@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abuse Ring Sentinel | Multi-Entity Graph Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header>
+      <div class="brand-wrapper">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Abuse Ring Sentinel</h1>
+          <p>Multi-Entity Graph Intelligence & Coordinated Fraud Detection</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="system-status-pill">
+          <span class="status-dot"></span>
+          <span>Sentinel Engine Active</span>
+        </div>
+        <button id="refresh-btn" class="btn btn-secondary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
+          Refresh
+        </button>
+      </div>
+    </header>
+
+    <!-- KPI Metric Cards -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-title">Detected Clusters</div>
+        <div id="kpi-total-clusters" class="kpi-value">--</div>
+        <div class="kpi-sub">Candidate communities via Louvain</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">High-Risk Abuse Rings</div>
+        <div id="kpi-high-risk" class="kpi-value" style="color: #FCA5A5;">--</div>
+        <div class="kpi-sub">Risk Score &ge; 0.70</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Linked Accounts</div>
+        <div id="kpi-linked-accounts" class="kpi-value" style="color: #38BDF8;">--</div>
+        <div class="kpi-sub">Accounts in candidate clusters</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Total Cluster Exposure</div>
+        <div id="kpi-total-volume" class="kpi-value">--</div>
+        <div class="kpi-sub">Transaction volume across rings</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Investigative Queue</div>
+        <div id="kpi-investigation" class="kpi-value" style="color: #FDE68A;">--</div>
+        <div class="kpi-sub">Clusters pending review</div>
+      </div>
+    </div>
+
+    <!-- Filter & Search Controls -->
+    <div class="controls-bar">
+      <div class="filter-group">
+        <input type="text" id="search-input" class="search-input" placeholder="Search Cluster ID or Signal...">
+        
+        <select id="status-filter" class="select-input">
+          <option value="">All Statuses</option>
+          <option value="UNDER_INVESTIGATION">Under Investigation</option>
+          <option value="CONFIRMED_FRAUD">Confirmed Fraud</option>
+          <option value="DISMISSED_LEGIT">Dismissed Legit</option>
+        </select>
+
+        <select id="type-filter" class="select-input">
+          <option value="">All Ring Types</option>
+          <option value="card_testing">Card Testing</option>
+          <option value="promo_abuse">Promo Abuse</option>
+          <option value="cash_out">Cash-Out</option>
+          <option value="legit_lookalike">Legit Look-Alike</option>
+        </select>
+      </div>
+
+      <div class="legend-preview">
+        <span class="badge badge-high">High Risk</span>
+        <span class="badge badge-medium">Medium</span>
+        <span class="badge badge-low">Low / Legit</span>
+      </div>
+    </div>
+
+    <!-- Clusters Table Card -->
+    <div class="table-card">
+      <div class="table-header-row">
+        <h2>Candidate Abuse Rings & Look-Alike Communities</h2>
+        <span id="cluster-count-label" class="badge badge-neutral">Loading clusters...</span>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table class="cluster-table">
+          <thead>
+            <tr>
+              <th>Cluster ID</th>
+              <th>Members</th>
+              <th>Risk Score</th>
+              <th>Classification</th>
+              <th>Primary Signal</th>
+              <th>Density</th>
+              <th>Decline %</th>
+              <th>Rapid Drain %</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="clusters-tbody">
+            <tr>
+              <td colspan="10" style="text-align: center; padding: 40px; color: var(--text-muted);">
+                Loading detected clusters from sentinel.db...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Investigation Modal / Slide-in Panel -->
+  <div id="investigation-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <h3 id="modal-cluster-id">Cluster Details</h3>
+          <span id="modal-risk-badge" class="badge">--</span>
+          <span id="modal-gt-tag" class="badge badge-neutral">--</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <select id="modal-status-select" class="select-input" style="padding: 6px 10px;">
+            <option value="UNDER_INVESTIGATION">UNDER_INVESTIGATION</option>
+            <option value="CONFIRMED_FRAUD">CONFIRMED_FRAUD</option>
+            <option value="DISMISSED_LEGIT">DISMISSED_LEGIT</option>
+          </select>
+          <button id="modal-save-status-btn" class="btn btn-primary" style="padding: 6px 12px; font-size: 12px;">Save Status</button>
+          <button id="modal-close-btn" class="close-btn">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <!-- 9 Feature Matrix Grid -->
+        <div>
+          <h4 style="font-size: 13px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 10px;">
+            9-Dimensional Cluster Feature Matrix
+          </h4>
+          <div class="feature-matrix-grid" id="modal-feature-matrix">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Graph Subgraph Visualization -->
+        <div class="graph-container-card">
+          <div class="graph-container-header">
+            <h4>Entity Subgraph & Shared Signal Connections</h4>
+            <div class="graph-legend">
+              <div class="legend-item"><span class="legend-color" style="background: #38BDF8;"></span> Device</div>
+              <div class="legend-item"><span class="legend-color" style="background: #60A5FA;"></span> IP Address</div>
+              <div class="legend-item"><span class="legend-color" style="background: #C084FC;"></span> Card Fingerprint</div>
+              <div class="legend-item"><span class="legend-color" style="background: #F97316;"></span> Payout Hash</div>
+              <div class="legend-item"><span class="legend-color" style="background: #34D399;"></span> P2P Transfer</div>
+            </div>
+          </div>
+          <canvas id="cluster-graph-canvas"></canvas>
+        </div>
+
+        <!-- Tabbed Inspector -->
+        <div>
+          <div class="modal-tabs">
+            <button class="tab-btn active" data-tab="tab-members">Member Accounts (<span id="tab-member-count">0</span>)</button>
+            <button class="tab-btn" data-tab="tab-instruments">Instruments & Payouts (<span id="tab-inst-count">0</span>)</button>
+            <button class="tab-btn" data-tab="tab-transactions">Recent Transactions (<span id="tab-tx-count">0</span>)</button>
+          </div>
+
+          <!-- Tab 1: Members -->
+          <div id="tab-members" class="tab-panel active" style="margin-top: 14px; max-height: 260px; overflow-y: auto;">
+            <table class="sub-table">
+              <thead>
+                <tr>
+                  <th>Account ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Device ID</th>
+                  <th>IP Address</th>
+                  <th>KYC</th>
+                  <th>Risk</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody id="modal-members-tbody"></tbody>
+            </table>
+          </div>
+
+          <!-- Tab 2: Instruments & Payouts -->
+          <div id="tab-instruments" class="tab-panel" style="margin-top: 14px; max-height: 260px; overflow-y: auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div>
+                <h5 style="color: var(--text-secondary); margin-bottom: 8px; font-size: 12px;">Payment Instruments</h5>
+                <table class="sub-table">
+                  <thead>
+                    <tr>
+                      <th>Account</th>
+                      <th>Type</th>
+                      <th>BIN</th>
+                      <th>Last4</th>
+                      <th>Fingerprint</th>
+                    </tr>
+                  </thead>
+                  <tbody id="modal-instruments-tbody"></tbody>
+                </table>
+              </div>
+              <div>
+                <h5 style="color: var(--text-secondary); margin-bottom: 8px; font-size: 12px;">Payout Destinations</h5>
+                <table class="sub-table">
+                  <thead>
+                    <tr>
+                      <th>Account</th>
+                      <th>Type</th>
+                      <th>Holder</th>
+                      <th>Destination Hash</th>
+                    </tr>
+                  </thead>
+                  <tbody id="modal-payouts-tbody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Transactions -->
+          <div id="tab-transactions" class="tab-panel" style="margin-top: 14px; max-height: 260px; overflow-y: auto;">
+            <table class="sub-table">
+              <thead>
+                <tr>
+                  <th>Txn ID</th>
+                  <th>Account</th>
+                  <th>Timestamp</th>
+                  <th>Amount</th>
+                  <th>Type</th>
+                  <th>Status</th>
+                  <th>Merchant / Counterparty</th>
+                </tr>
+              </thead>
+              <tbody id="modal-tx-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

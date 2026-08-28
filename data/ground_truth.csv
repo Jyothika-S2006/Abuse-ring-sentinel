@@ -1,0 +1,601 @@
+account_id,is_abuse,ring_id,ring_type,shared_signals,notes
+ACC_000001,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000002,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000003,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000004,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000005,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000006,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000007,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000008,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000009,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000010,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000011,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000012,True,RING_01_CARD_TESTING,card_testing,"[""ip_subnet_24"", ""device_fingerprint_pattern"", ""high_velocity_micro_declines""]",Card-testing botnet running micro-charge validations across shared /24 subnet and bot device fingerprints.
+ACC_000013,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000014,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000015,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000016,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000017,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000018,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000019,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000020,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000021,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000022,True,RING_02_CARD_TESTING,card_testing,"[""device_id"", ""rapid_account_creation"", ""card_testing_declines""]",Single device emulator spinning up multiple accounts to spray stolen card attempts.
+ACC_000023,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000024,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000025,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000026,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000027,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000028,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000029,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000030,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000031,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000032,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000033,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000034,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000035,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000036,True,RING_03_CARD_TESTING,card_testing,"[""card_fingerprint_overlap"", ""distributed_card_cycling""]",Distributed ring sharing a common pool of stolen card fingerprints across distinct accounts.
+ACC_000037,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000038,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000039,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000040,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000041,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000042,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000043,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000044,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000045,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000046,True,RING_04_CARD_TESTING,card_testing,"[""ip_address"", ""merchant_category_gaming"", ""high_velocity_burst""]",Burst card testing targeting gaming merchants from a single proxy IP.
+ACC_000047,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000048,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000049,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000050,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000051,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000052,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000053,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000054,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000055,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000056,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000057,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000058,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000059,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000060,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000061,True,RING_05_PROMO_ABUSE,promo_abuse,"[""email_base_pattern"", ""device_farm_ids"", ""shared_ip"", ""instant_promo_redemption""]",Sybil farm exploiting sign-up promotions via email plus-addressing on shared emulator devices.
+ACC_000062,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Root recruiter in star-topology referral abuse network collecting referral bonus payouts.
+ACC_000063,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000064,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000065,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000066,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000067,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000068,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000069,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000070,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000071,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000072,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000073,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000074,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000075,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000076,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000077,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000078,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000079,True,RING_06_PROMO_ABUSE,promo_abuse,"[""referral_star_topology"", ""card_bin_concentration"", ""phone_number_cluster""]",Child referee account in star-topology referral ring claiming sign-up rewards.
+ACC_000080,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000081,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000082,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000083,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000084,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000085,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000086,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000087,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000088,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000089,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000090,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000091,True,RING_07_PROMO_ABUSE,promo_abuse,"[""disposable_email_domain"", ""shared_gateway_ip"", ""zero_dollar_voucher_churn""]",Disposable domain accounts churning coupon discount codes on shared gateway.
+ACC_000092,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000093,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000094,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000095,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000096,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000097,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000098,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000099,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000100,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000101,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000102,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000103,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000104,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000105,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000106,True,RING_08_CASHOUT,cash_out,"[""shared_payout_destination_hash"", ""funnel_consolidation"", ""rapid_payout_drain""]",Mule account funnelling stolen card deposits into a single shared crypto/bank consolidation endpoint.
+ACC_000107,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000108,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000109,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000110,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000111,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000112,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000113,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000114,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000115,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000116,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000117,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000118,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000119,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000120,True,RING_09_CASHOUT,cash_out,"[""shared_controller_device"", ""structured_amounts"", ""short_holding_time""]",Coordinated cash-out operation using shared control hardware with structured $900+ withdrawals.
+ACC_000121,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 1 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000122,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 1 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000123,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 1 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000124,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 1 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000125,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 1 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000126,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 2 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000127,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 2 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000128,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 2 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000129,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 2 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000130,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 2 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000131,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 3 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000132,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 3 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000133,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 3 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000134,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 3 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000135,True,RING_10_CASHOUT,cash_out,"[""p2p_layering_topology"", ""shared_recovery_phone"", ""exit_destination_overlap""]",Layer 3 node in 3-tier layering mule network terminating in shared exit endpoints.
+ACC_000136,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000137,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000138,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000139,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000140,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000141,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000142,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000143,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000144,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000145,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000146,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000147,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000148,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000149,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000150,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000151,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000152,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000153,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000154,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000155,False,LEGIT_CLUSTER_01_CAMPUS_IP,legit_shared_ip,"[""shared_public_ip""]",Legitimate university students/staff sharing campus gateway public NAT IP address.
+ACC_000156,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000157,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000158,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000159,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000160,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000161,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000162,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000163,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000164,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000165,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000166,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000167,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000168,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000169,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000170,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000171,False,LEGIT_CLUSTER_02_HOUSEHOLD,legit_shared_device,"[""shared_device_id"", ""shared_home_ip""]",Legitimate household family members sharing a shared home iPad and residential WiFi.
+ACC_000172,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000173,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000174,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000175,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000176,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000177,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000178,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000179,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000180,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000181,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000182,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000183,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000184,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000185,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000186,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000187,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000188,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000189,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000190,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000191,False,LEGIT_CLUSTER_03_LANDLORD,legit_shared_payout_dest,"[""shared_payout_destination_hash""]",Legitimate residential tenants transferring monthly rent to verified property manager destination.
+ACC_000192,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000193,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000194,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000195,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000196,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000197,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000198,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000199,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000200,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000201,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000202,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000203,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000204,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000205,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000206,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000207,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000208,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000209,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000210,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000211,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000212,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000213,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000214,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000215,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000216,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000217,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000218,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000219,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000220,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000221,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000222,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000223,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000224,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000225,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000226,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000227,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000228,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000229,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000230,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000231,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000232,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000233,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000234,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000235,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000236,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000237,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000238,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000239,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000240,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000241,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000242,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000243,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000244,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000245,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000246,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000247,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000248,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000249,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000250,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000251,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000252,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000253,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000254,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000255,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000256,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000257,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000258,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000259,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000260,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000261,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000262,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000263,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000264,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000265,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000266,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000267,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000268,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000269,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000270,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000271,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000272,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000273,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000274,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000275,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000276,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000277,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000278,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000279,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000280,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000281,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000282,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000283,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000284,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000285,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000286,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000287,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000288,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000289,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000290,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000291,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000292,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000293,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000294,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000295,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000296,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000297,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000298,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000299,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000300,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000301,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000302,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000303,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000304,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000305,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000306,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000307,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000308,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000309,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000310,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000311,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000312,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000313,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000314,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000315,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000316,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000317,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000318,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000319,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000320,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000321,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000322,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000323,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000324,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000325,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000326,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000327,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000328,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000329,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000330,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000331,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000332,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000333,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000334,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000335,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000336,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000337,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000338,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000339,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000340,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000341,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000342,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000343,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000344,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000345,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000346,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000347,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000348,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000349,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000350,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000351,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000352,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000353,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000354,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000355,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000356,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000357,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000358,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000359,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000360,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000361,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000362,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000363,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000364,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000365,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000366,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000367,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000368,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000369,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000370,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000371,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000372,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000373,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000374,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000375,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000376,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000377,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000378,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000379,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000380,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000381,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000382,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000383,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000384,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000385,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000386,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000387,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000388,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000389,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000390,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000391,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000392,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000393,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000394,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000395,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000396,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000397,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000398,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000399,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000400,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000401,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000402,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000403,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000404,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000405,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000406,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000407,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000408,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000409,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000410,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000411,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000412,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000413,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000414,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000415,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000416,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000417,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000418,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000419,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000420,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000421,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000422,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000423,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000424,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000425,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000426,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000427,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000428,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000429,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000430,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000431,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000432,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000433,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000434,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000435,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000436,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000437,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000438,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000439,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000440,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000441,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000442,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000443,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000444,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000445,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000446,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000447,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000448,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000449,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000450,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000451,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000452,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000453,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000454,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000455,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000456,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000457,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000458,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000459,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000460,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000461,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000462,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000463,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000464,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000465,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000466,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000467,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000468,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000469,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000470,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000471,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000472,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000473,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000474,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000475,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000476,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000477,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000478,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000479,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000480,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000481,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000482,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000483,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000484,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000485,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000486,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000487,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000488,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000489,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000490,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000491,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000492,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000493,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000494,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000495,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000496,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000497,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000498,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000499,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000500,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000501,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000502,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000503,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000504,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000505,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000506,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000507,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000508,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000509,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000510,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000511,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000512,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000513,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000514,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000515,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000516,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000517,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000518,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000519,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000520,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000521,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000522,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000523,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000524,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000525,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000526,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000527,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000528,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000529,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000530,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000531,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000532,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000533,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000534,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000535,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000536,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000537,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000538,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000539,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000540,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000541,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000542,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000543,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000544,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000545,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000546,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000547,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000548,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000549,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000550,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000551,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000552,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000553,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000554,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000555,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000556,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000557,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000558,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000559,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000560,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000561,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000562,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000563,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000564,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000565,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000566,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000567,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000568,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000569,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000570,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000571,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000572,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000573,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000574,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000575,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000576,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000577,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000578,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000579,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000580,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000581,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000582,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000583,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000584,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000585,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000586,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000587,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000588,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000589,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000590,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000591,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000592,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000593,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000594,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000595,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000596,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000597,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000598,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000599,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
+ACC_000600,False,ORGANIC_LEGIT,organic_legit,[],Standard organic platform user with regular benign activity.
