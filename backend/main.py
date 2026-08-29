@@ -18,7 +18,7 @@ from fastapi.staticfiles import StaticFiles
 
 from backend.db import init_db
 from backend.routes import clusters
-from backend.routes.agent import router as agent_router  # Added agent route import
+from backend.routes.agent_route import router as agent_router  # Added agent route import
 from backend.routes.audit import router as audit_router  # Added audit route import
 
 app = FastAPI(
