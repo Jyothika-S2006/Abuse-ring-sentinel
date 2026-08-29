@@ -194,6 +194,9 @@ async function openClusterModal(clusterId) {
     // Render Canvas Graph Visualization
     renderEntityGraph(data.nodes, data.edges);
 
+    // Fetch and render agent investigation results
+    fetchAndRenderInvestigation(clusterId);
+
     // Show modal
     document.getElementById("investigation-modal").classList.add("active");
   } catch (err) {
@@ -316,6 +319,180 @@ async function updateClusterStatus() {
     console.error("Failed to update status:", err);
     alert(`Error updating status: ${err.message}`);
   }
+}
+
+/**
+ * Fetch agent investigation results from /api/agent/explain/{cluster_id}
+ */
+async function fetchAndRenderInvestigation(clusterId) {
+  try {
+    const res = await fetch(`/api/agent/explain/${clusterId}`);
+    if (!res.ok) {
+      if (res.status === 404) {
+        renderInvestigationPlaceholder("Investigation not yet run");
+        return;
+      }
+      throw new Error(`HTTP error ${res.status}`);
+    }
+    const investigationData = await res.json();
+    renderInvestigationEvidence(investigationData);
+    renderInvestigationCritique(investigationData);
+  } catch (err) {
+    console.error("Failed to fetch investigation:", err);
+    renderInvestigationPlaceholder(`Investigation unavailable: ${err.message}`);
+  }
+}
+
+function renderInvestigationPlaceholder(message) {
+  const evidenceContainer = document.getElementById("evidence-container");
+  const critiqueContainer = document.getElementById("critique-container");
+  
+  const placeholder = `
+    <div style="text-align: center; padding: 24px; color: var(--text-secondary);">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 12px; opacity: 0.5;">
+        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 8v4m0 4v.01"/>
+      </svg>
+      <p style="margin: 0; font-size: 13px;">${message}</p>
+      <p style="margin: 4px 0 0; font-size: 11px; opacity: 0.7;">Run investigation from backend to see results</p>
+    </div>
+  `;
+  
+  evidenceContainer.innerHTML = placeholder;
+  critiqueContainer.innerHTML = placeholder;
+}
+
+function renderInvestigationEvidence(data) {
+  const container = document.getElementById("evidence-container");
+  
+  if (!data.investigation || !data.investigation.data) {
+    container.innerHTML = `<div style="text-align: center; color: var(--text-secondary); padding: 12px;">No investigation data available</div>`;
+    return;
+  }
+
+  const inv = data.investigation.data;
+  const confidence = (inv.confidence * 100).toFixed(1);
+
+  let signalsHtml = "";
+  if (inv.shared_signals && inv.shared_signals.length > 0) {
+    signalsHtml = `
+      <div style="margin-top: 12px;">
+        <h5 style="color: var(--text-secondary); margin: 0 0 8px; font-size: 12px; text-transform: uppercase;">Shared Signals Found</h5>
+        <div style="display: grid; gap: 6px;">
+          ${inv.shared_signals.map(sig => `
+            <div style="padding: 8px; background: rgba(99, 102, 241, 0.1); border-left: 3px solid #6366F1; border-radius: 4px; font-size: 12px;">
+              <strong style="color: #6366F1;">${sig.replace(/_/g, ' ').toUpperCase()}</strong>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  let flagsHtml = "";
+  if (inv.behavioral_flags && inv.behavioral_flags.length > 0) {
+    flagsHtml = `
+      <div style="margin-top: 12px;">
+        <h5 style="color: var(--text-secondary); margin: 0 0 8px; font-size: 12px; text-transform: uppercase;">Behavioral Red Flags</h5>
+        <div style="display: grid; gap: 6px;">
+          ${inv.behavioral_flags.map(flag => `
+            <div style="padding: 8px; background: rgba(244, 63, 94, 0.1); border-left: 3px solid #F43F5E; border-radius: 4px; font-size: 12px;">
+              <strong style="color: #F43F5E;">⚠️ ${flag}</strong>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  container.innerHTML = `
+    <div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+        <div style="padding: 12px; background: rgba(59, 130, 246, 0.1); border-radius: 6px;">
+          <div style="font-size: 11px; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 4px;">Investigator Confidence</div>
+          <div style="font-size: 18px; font-weight: 600; color: #3B82F6;">${confidence}%</div>
+        </div>
+        <div style="padding: 12px; background: rgba(139, 92, 246, 0.1); border-radius: 6px;">
+          <div style="font-size: 11px; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 4px;">Ring Type</div>
+          <div style="font-size: 14px; font-weight: 600; color: #8B5CF6;">${(inv.ring_type || 'Unknown').replace(/_/g, ' ').toUpperCase()}</div>
+        </div>
+      </div>
+
+      <div style="padding: 10px; background: var(--bg-default); border-radius: 6px; border: 1px solid var(--border-color); margin-bottom: 12px;">
+        <p style="margin: 0; font-size: 12px; line-height: 1.5; color: var(--text-primary);">
+          <strong>Summary:</strong> ${inv.summary || 'Investigation in progress...'}
+        </p>
+      </div>
+
+      ${signalsHtml}
+      ${flagsHtml}
+    </div>
+  `;
+}
+
+function renderInvestigationCritique(data) {
+  const container = document.getElementById("critique-container");
+  
+  if (!data.critique || !data.critique.data) {
+    container.innerHTML = `<div style="text-align: center; color: var(--text-secondary); padding: 12px;">No critique data available</div>`;
+    return;
+  }
+
+  const crit = data.critique.data;
+  const finalConfidence = (crit.final_confidence * 100).toFixed(1);
+  const recommendation = crit.final_recommendation ? crit.final_recommendation.toUpperCase().replace(/_/g, ' ') : 'UNKNOWN';
+  
+  let recommendationColor = '#94A3B8';
+  let recommendationBg = 'rgba(148, 163, 184, 0.1)';
+  
+  if (recommendation.includes('FLAG') || recommendation.includes('INVESTIGATE')) {
+    recommendationColor = '#FCA5A5';
+    recommendationBg = 'rgba(252, 165, 165, 0.1)';
+  } else if (recommendation.includes('DISMISS')) {
+    recommendationColor = '#A7F3D0';
+    recommendationBg = 'rgba(167, 243, 208, 0.1)';
+  } else if (recommendation.includes('ESCALATE')) {
+    recommendationColor = '#FDE68A';
+    recommendationBg = 'rgba(253, 230, 138, 0.1)';
+  }
+
+  let counterHtml = "";
+  if (crit.counter_considerations && crit.counter_considerations.length > 0) {
+    counterHtml = `
+      <div style="margin-top: 12px;">
+        <h5 style="color: var(--text-secondary); margin: 0 0 8px; font-size: 12px; text-transform: uppercase;">Counter-Considerations</h5>
+        <div style="display: grid; gap: 6px;">
+          ${crit.counter_considerations.map(counter => `
+            <div style="padding: 8px; background: rgba(34, 197, 94, 0.1); border-left: 3px solid #22C55E; border-radius: 4px; font-size: 12px;">
+              <strong style="color: #22C55E;">✓ ${counter}</strong>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  container.innerHTML = `
+    <div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+        <div style="padding: 12px; background: rgba(168, 85, 247, 0.1); border-radius: 6px;">
+          <div style="font-size: 11px; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 4px;">Critic Adjusted Confidence</div>
+          <div style="font-size: 18px; font-weight: 600; color: #A855F7;">${finalConfidence}%</div>
+        </div>
+        <div style="padding: 12px; background: ${recommendationBg}; border-radius: 6px;">
+          <div style="font-size: 11px; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 4px;">Recommendation</div>
+          <div style="font-size: 14px; font-weight: 600; color: ${recommendationColor};">${recommendation}</div>
+        </div>
+      </div>
+
+      <div style="padding: 10px; background: var(--bg-default); border-radius: 6px; border: 1px solid var(--border-color); margin-bottom: 12px;">
+        <p style="margin: 0; font-size: 12px; line-height: 1.5; color: var(--text-primary);">
+          <strong>Skeptical Review:</strong> ${crit.skeptical_summary || 'Critique in progress...'}
+        </p>
+      </div>
+
+      ${counterHtml}
+    </div>
+  `;
 }
 
 /**

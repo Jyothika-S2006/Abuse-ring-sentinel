@@ -185,12 +185,25 @@
         <!-- Tabbed Inspector -->
         <div>
           <div class="modal-tabs">
-            <button class="tab-btn active" data-tab="tab-members">Member Accounts (<span id="tab-member-count">0</span>)</button>
-            <button class="tab-btn" data-tab="tab-instruments">Instruments & Payouts (<span id="tab-inst-count">0</span>)</button>
-            <button class="tab-btn" data-tab="tab-transactions">Recent Transactions (<span id="tab-tx-count">0</span>)</button>
+            <button class="tab-btn active" data-tab="tab-evidence">Evidence & Investigation</button>
+            <button class="tab-btn" data-tab="tab-critique">Critique & Recommendation</button>
+            <button class="tab-btn" data-tab="tab-members">Member Accounts (<span id="tab-member-count">0</span>)</button>
+
+          <!-- Tab 1: Evidence & Investigation -->
+          <div id="tab-evidence" class="tab-panel" style="margin-top: 14px; max-height: 360px; overflow-y: auto;">
+            <div id="evidence-container" style="padding: 12px; background: var(--bg-hover); border-radius: 8px;">
+              <!-- Investigation summary will be rendered here -->
+            </div>
           </div>
 
-          <!-- Tab 1: Members -->
+          <!-- Tab 2: Critique & Recommendation -->
+          <div id="tab-critique" class="tab-panel" style="margin-top: 14px; max-height: 360px; overflow-y: auto;">
+            <div id="critique-container" style="padding: 12px; background: var(--bg-hover); border-radius: 8px;">
+              <!-- Critique summary will be rendered here -->
+            </div>
+          </div>
+
+          <!-- Tab 3: Members -->
           <div id="tab-members" class="tab-panel active" style="margin-top: 14px; max-height: 260px; overflow-y: auto;">
             <table class="sub-table">
               <thead>
@@ -209,7 +222,7 @@
             </table>
           </div>
 
-          <!-- Tab 2: Instruments & Payouts -->
+          <!-- Tab 4: Instruments & Payouts -->
           <div id="tab-instruments" class="tab-panel" style="margin-top: 14px; max-height: 260px; overflow-y: auto;">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
               <div>
@@ -244,7 +257,7 @@
             </div>
           </div>
 
-          <!-- Tab 3: Transactions -->
+          <!-- Tab 5: Transactions -->
           <div id="tab-transactions" class="tab-panel" style="margin-top: 14px; max-height: 260px; overflow-y: auto;">
             <table class="sub-table">
               <thead>
