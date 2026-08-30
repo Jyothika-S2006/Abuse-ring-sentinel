@@ -183,9 +183,13 @@ async function openClusterModal(clusterId) {
     renderFeatureMatrix(data.cluster);
 
     // Tab counts & sub-tables
-    document.getElementById("tab-member-count").textContent = data.nodes.length;
-    document.getElementById("tab-inst-count").textContent = data.instruments.length + data.payout_destinations.length;
-    document.getElementById("tab-tx-count").textContent = data.transactions.length;
+    const memberCountEl = document.getElementById("tab-member-count");
+    const instCountEl = document.getElementById("tab-inst-count");
+    const txCountEl = document.getElementById("tab-tx-count");
+
+    if (memberCountEl) memberCountEl.textContent = data.nodes.length || 0;
+    if (instCountEl) instCountEl.textContent = (data.instruments?.length || 0) + (data.payout_destinations?.length || 0);
+    if (txCountEl) txCountEl.textContent = data.transactions?.length || 0;
 
     renderMemberRoster(data.nodes);
     renderInstrumentsTable(data.instruments, data.payout_destinations);

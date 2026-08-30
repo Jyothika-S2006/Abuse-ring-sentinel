@@ -589,11 +589,18 @@ header {
   font-weight: 600;
   cursor: pointer;
   border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.tab-btn:hover {
+  background: rgba(51, 65, 85, 0.4);
+  color: var(--text-primary);
 }
 
 .tab-btn.active {
-  background: rgba(51, 65, 85, 0.6);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(99, 102, 241, 0.18));
   color: var(--text-primary);
+  border: 1px solid rgba(96, 165, 250, 0.35);
 }
 
 .tab-panel {
