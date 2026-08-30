@@ -363,24 +363,26 @@ function renderInvestigationPlaceholder(message) {
 
 function renderInvestigationEvidence(data) {
   const container = document.getElementById("evidence-container");
-  
-  if (!data.investigation || !data.investigation.data) {
+
+  const inv = data?.investigation?.data ?? data?.investigation ?? {};
+  if (!inv || Object.keys(inv).length === 0) {
     container.innerHTML = `<div style="text-align: center; color: var(--text-secondary); padding: 12px;">No investigation data available</div>`;
     return;
   }
 
-  const inv = data.investigation.data;
-  const confidence = (inv.confidence * 100).toFixed(1);
+  const confidenceValue = Number(inv.confidence ?? 0.0);
+  const confidence = (confidenceValue * 100).toFixed(1);
 
   let signalsHtml = "";
-  if (inv.shared_signals && inv.shared_signals.length > 0) {
+  const sharedSignals = Array.isArray(inv.shared_signals) ? inv.shared_signals : [];
+  if (sharedSignals.length > 0) {
     signalsHtml = `
       <div style="margin-top: 12px;">
         <h5 style="color: var(--text-secondary); margin: 0 0 8px; font-size: 12px; text-transform: uppercase;">Shared Signals Found</h5>
         <div style="display: grid; gap: 6px;">
-          ${inv.shared_signals.map(sig => `
+          ${sharedSignals.map(sig => `
             <div style="padding: 8px; background: rgba(99, 102, 241, 0.1); border-left: 3px solid #6366F1; border-radius: 4px; font-size: 12px;">
-              <strong style="color: #6366F1;">${sig.replace(/_/g, ' ').toUpperCase()}</strong>
+              <strong style="color: #6366F1;">${String(sig).replace(/_/g, ' ').toUpperCase()}</strong>
             </div>
           `).join("")}
         </div>
@@ -389,12 +391,13 @@ function renderInvestigationEvidence(data) {
   }
 
   let flagsHtml = "";
-  if (inv.behavioral_flags && inv.behavioral_flags.length > 0) {
+  const behavioralFlags = Array.isArray(inv.behavioral_flags) ? inv.behavioral_flags : [];
+  if (behavioralFlags.length > 0) {
     flagsHtml = `
       <div style="margin-top: 12px;">
         <h5 style="color: var(--text-secondary); margin: 0 0 8px; font-size: 12px; text-transform: uppercase;">Behavioral Red Flags</h5>
         <div style="display: grid; gap: 6px;">
-          ${inv.behavioral_flags.map(flag => `
+          ${behavioralFlags.map(flag => `
             <div style="padding: 8px; background: rgba(244, 63, 94, 0.1); border-left: 3px solid #F43F5E; border-radius: 4px; font-size: 12px;">
               <strong style="color: #F43F5E;">⚠️ ${flag}</strong>
             </div>
@@ -403,6 +406,8 @@ function renderInvestigationEvidence(data) {
       </div>
     `;
   }
+
+  const ringType = String(inv.ring_type || inv.detected_ring_type || 'Unknown');
 
   container.innerHTML = `
     <div>
@@ -413,13 +418,13 @@ function renderInvestigationEvidence(data) {
         </div>
         <div style="padding: 12px; background: rgba(139, 92, 246, 0.1); border-radius: 6px;">
           <div style="font-size: 11px; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 4px;">Ring Type</div>
-          <div style="font-size: 14px; font-weight: 600; color: #8B5CF6;">${(inv.ring_type || 'Unknown').replace(/_/g, ' ').toUpperCase()}</div>
+          <div style="font-size: 14px; font-weight: 600; color: #8B5CF6;">${ringType.replace(/_/g, ' ').toUpperCase()}</div>
         </div>
       </div>
 
       <div style="padding: 10px; background: var(--bg-default); border-radius: 6px; border: 1px solid var(--border-color); margin-bottom: 12px;">
         <p style="margin: 0; font-size: 12px; line-height: 1.5; color: var(--text-primary);">
-          <strong>Summary:</strong> ${inv.summary || 'Investigation in progress...'}
+          <strong>Summary:</strong> ${inv.summary || inv.description || 'Investigation in progress...'}
         </p>
       </div>
 
@@ -431,19 +436,20 @@ function renderInvestigationEvidence(data) {
 
 function renderInvestigationCritique(data) {
   const container = document.getElementById("critique-container");
-  
-  if (!data.critique || !data.critique.data) {
+
+  const crit = data?.critique?.data ?? data?.critique ?? {};
+  if (!crit || Object.keys(crit).length === 0) {
     container.innerHTML = `<div style="text-align: center; color: var(--text-secondary); padding: 12px;">No critique data available</div>`;
     return;
   }
 
-  const crit = data.critique.data;
-  const finalConfidence = (crit.final_confidence * 100).toFixed(1);
-  const recommendation = crit.final_recommendation ? crit.final_recommendation.toUpperCase().replace(/_/g, ' ') : 'UNKNOWN';
-  
+  const finalConfidenceValue = Number(crit.adjusted_confidence ?? crit.final_confidence ?? 0.0);
+  const finalConfidence = (finalConfidenceValue * 100).toFixed(1);
+  const recommendation = String(crit.final_recommendation || 'UNKNOWN').toUpperCase().replace(/_/g, ' ');
+
   let recommendationColor = '#94A3B8';
   let recommendationBg = 'rgba(148, 163, 184, 0.1)';
-  
+
   if (recommendation.includes('FLAG') || recommendation.includes('INVESTIGATE')) {
     recommendationColor = '#FCA5A5';
     recommendationBg = 'rgba(252, 165, 165, 0.1)';
@@ -456,12 +462,13 @@ function renderInvestigationCritique(data) {
   }
 
   let counterHtml = "";
-  if (crit.counter_considerations && crit.counter_considerations.length > 0) {
+  const considerations = Array.isArray(crit.counter_considerations) ? crit.counter_considerations : [];
+  if (considerations.length > 0) {
     counterHtml = `
       <div style="margin-top: 12px;">
         <h5 style="color: var(--text-secondary); margin: 0 0 8px; font-size: 12px; text-transform: uppercase;">Counter-Considerations</h5>
         <div style="display: grid; gap: 6px;">
-          ${crit.counter_considerations.map(counter => `
+          ${considerations.map(counter => `
             <div style="padding: 8px; background: rgba(34, 197, 94, 0.1); border-left: 3px solid #22C55E; border-radius: 4px; font-size: 12px;">
               <strong style="color: #22C55E;">✓ ${counter}</strong>
             </div>
