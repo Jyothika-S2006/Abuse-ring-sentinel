@@ -1,20 +1,20 @@
 /* ==========================================================================
-   Abuse Ring Sentinel - Calm Modern Tech Theme
-   Color Palette: Deep Slate-Gray (#0F172A / #1E293B) + Soft Pastel Accents
-   ========================================================================== */
+  Abuse Ring Sentinel - Cyber-Forensics Deep Mode
+  Void-black canvas, technical grid overlay, and clear risk semantics.
+  ========================================================================== */
 
 :root {
   /* Theme Backgrounds */
-  --bg-primary: #0F172A;
-  --bg-secondary: #1E293B;
-  --bg-card: rgba(30, 41, 59, 0.75);
-  --bg-card-hover: rgba(51, 65, 85, 0.85);
-  --bg-glass: rgba(15, 23, 42, 0.65);
-  --bg-input: #0F172A;
+  --bg-primary: #0B0D10;
+  --bg-secondary: #14171C;
+  --bg-card: rgba(20, 23, 27, 0.72);
+  --bg-card-hover: rgba(30, 34, 40, 0.88);
+  --bg-glass: rgba(11, 13, 16, 0.7);
+  --bg-input: #0B0D10;
 
   /* Borders & Dividers */
-  --border-subtle: #334155;
-  --border-focus: #64748B;
+  --border-subtle: #1E293B;
+  --border-focus: #334155;
   --border-highlight: #38BDF8;
 
   /* Typography */
@@ -26,19 +26,19 @@
 
   /* Soft Pastel Badges & Indicators */
   /* Low Risk (Mint Green) */
-  --mint-pastel-bg: #064E3B;
-  --mint-pastel-text: #A7F3D0;
-  --mint-pastel-border: #059669;
+  --mint-pastel-bg: rgba(148, 163, 184, 0.12);
+  --mint-pastel-text: #CBD5E1;
+  --mint-pastel-border: #64748B;
 
   /* Medium Risk (Soft Amber) */
-  --amber-pastel-bg: #78350F;
-  --amber-pastel-text: #FDE68A;
-  --amber-pastel-border: #D97706;
+  --amber-pastel-bg: rgba(245, 158, 11, 0.12);
+  --amber-pastel-text: #FBBF24;
+  --amber-pastel-border: #F59E0B;
 
   /* High Risk / Fraud (Soft Coral) */
-  --coral-pastel-bg: #7F1D1D;
+  --coral-pastel-bg: rgba(239, 68, 68, 0.14);
   --coral-pastel-text: #FCA5A5;
-  --coral-pastel-border: #DC2626;
+  --coral-pastel-border: #EF4444;
 
   /* Informational / Accent */
   --accent-cyan: #38BDF8;
@@ -61,6 +61,10 @@
 
 body {
   background-color: var(--bg-primary);
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 14px;
@@ -99,7 +103,7 @@ header {
   width: 42px;
   height: 42px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #0EA5E9, #6366F1);
+  background: linear-gradient(135deg, #0EA5E9, #1E40AF);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,6 +126,7 @@ header {
 .brand-text p {
   font-size: 12px;
   color: var(--text-secondary);
+  font-family: var(--font-mono);
 }
 
 .header-actions {
@@ -135,11 +140,12 @@ header {
   align-items: center;
   gap: 8px;
   padding: 6px 12px;
-  background: rgba(30, 41, 59, 0.9);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: 20px;
   font-size: 12px;
   color: var(--text-secondary);
+  font-family: var(--font-mono);
 }
 
 .status-dot {
@@ -148,6 +154,12 @@ header {
   border-radius: 50%;
   background-color: #34D399;
   box-shadow: 0 0 8px #34D399;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
 }
 
 /* Buttons */
@@ -228,7 +240,8 @@ header {
 .kpi-title {
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
   color: var(--text-secondary);
   margin-bottom: 8px;
 }
@@ -238,6 +251,7 @@ header {
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -0.03em;
+  font-family: var(--font-mono);
 }
 
 .kpi-sub {
@@ -277,6 +291,7 @@ header {
   font-size: 13px;
   outline: none;
   min-width: 240px;
+  font-family: var(--font-mono);
 }
 
 .search-input:focus {
@@ -329,12 +344,13 @@ header {
 }
 
 .cluster-table th {
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(11, 13, 16, 0.9);
   color: var(--text-secondary);
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  font-family: var(--font-mono);
   padding: 12px 20px;
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -355,26 +371,27 @@ header {
   display: inline-flex;
   align-items: center;
   padding: 4px 10px;
-  border-radius: 16px;
+  border-radius: 4px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.02em;
+  font-family: var(--font-mono);
 }
 
 .badge-low {
-  background-color: var(--mint-pastel-bg);
+  background-color: rgba(148, 163, 184, 0.12);
   color: var(--mint-pastel-text);
   border: 1px solid var(--mint-pastel-border);
 }
 
 .badge-medium {
-  background-color: var(--amber-pastel-bg);
+  background-color: rgba(245, 158, 11, 0.12);
   color: var(--amber-pastel-text);
   border: 1px solid var(--amber-pastel-border);
 }
 
 .badge-high {
-  background-color: var(--coral-pastel-bg);
+  background-color: rgba(239, 68, 68, 0.14);
   color: var(--coral-pastel-text);
   border: 1px solid var(--coral-pastel-border);
 }
@@ -419,7 +436,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(10, 15, 28, 0.82);
+  background: rgba(5, 7, 9, 0.88);
   backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
@@ -436,7 +453,7 @@ header {
 }
 
 .modal-content {
-  background: #1E293B;
+  background: #14171C;
   border: 1px solid var(--border-subtle);
   border-radius: 14px;
   width: 92%;
@@ -454,7 +471,7 @@ header {
   align-items: center;
   padding: 20px 28px;
   border-bottom: 1px solid var(--border-subtle);
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(11, 13, 16, 0.95);
 }
 
 .modal-header-left {
@@ -467,6 +484,7 @@ header {
   font-size: 18px;
   font-weight: 700;
   color: var(--text-primary);
+  font-family: var(--font-mono);
 }
 
 .close-btn {
@@ -500,7 +518,7 @@ header {
 }
 
 .feature-box {
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(11, 13, 16, 0.6);
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   padding: 12px 14px;
@@ -512,6 +530,7 @@ header {
   text-transform: uppercase;
   color: var(--text-secondary);
   margin-bottom: 4px;
+  font-family: var(--font-mono);
 }
 
 .feature-box .feat-val {
@@ -523,7 +542,7 @@ header {
 
 /* Graph Visualization Container */
 .graph-container-card {
-  background: #0F172A;
+  background: #0B0D10;
   border: 1px solid var(--border-subtle);
   border-radius: 10px;
   padding: 16px;
@@ -567,7 +586,11 @@ header {
 #cluster-graph-canvas {
   width: 100%;
   height: 380px;
-  background: #0B1120;
+  background: #08090B;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
   border-radius: 8px;
   border: 1px solid rgba(51, 65, 85, 0.4);
 }
@@ -587,6 +610,9 @@ header {
   padding: 8px 16px;
   font-size: 13px;
   font-weight: 600;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 6px;
   transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
@@ -622,7 +648,7 @@ header {
   align-items: center;
   gap: 16px;
   padding: 12px 14px;
-  background: rgba(15, 23, 42, 0.55);
+  background: rgba(11, 13, 16, 0.6);
   border: 1px solid var(--border-subtle);
   border-left: 3px solid var(--accent-cyan);
   border-radius: 6px;
@@ -632,6 +658,7 @@ header {
 .audit-entry strong {
   color: var(--text-primary);
   text-transform: uppercase;
+  font-family: var(--font-mono);
 }
 
 .audit-previous,
@@ -647,6 +674,7 @@ header {
 .audit-time {
   white-space: nowrap;
   font-size: 11px;
+  font-family: var(--font-mono);
 }
 
 .audit-empty {
@@ -663,11 +691,12 @@ header {
 }
 
 .sub-table th {
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(11, 13, 16, 0.9);
   padding: 10px 14px;
   color: var(--text-secondary);
   font-weight: 600;
   border-bottom: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
 }
 
 .sub-table td {
