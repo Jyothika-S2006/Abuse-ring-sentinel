@@ -611,6 +611,50 @@ header {
   display: block;
 }
 
+.audit-history {
+  display: grid;
+  gap: 8px;
+}
+
+.audit-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-cyan);
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.audit-entry strong {
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.audit-previous,
+.audit-time,
+.audit-empty {
+  color: var(--text-secondary);
+}
+
+.audit-previous {
+  margin-left: 8px;
+}
+
+.audit-time {
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+.audit-empty {
+  padding: 18px;
+  text-align: center;
+  font-size: 12px;
+}
+
 /* Sub-tables */
 .sub-table {
   width: 100%;

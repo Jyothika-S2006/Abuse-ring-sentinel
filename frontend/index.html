@@ -150,6 +150,7 @@
             <option value="UNDER_INVESTIGATION">UNDER_INVESTIGATION</option>
             <option value="CONFIRMED_FRAUD">CONFIRMED_FRAUD</option>
             <option value="DISMISSED_LEGIT">DISMISSED_LEGIT</option>
+            <option value="ESCALATED">ESCALATED</option>
           </select>
           <button id="modal-save-status-btn" class="btn btn-primary" style="padding: 6px 12px; font-size: 12px;">Save Status</button>
           <button id="modal-close-btn" class="close-btn">&times;</button>
@@ -190,6 +191,7 @@
             <button class="tab-btn" data-tab="tab-members">Members (<span id="tab-member-count">0</span>)</button>
             <button class="tab-btn" data-tab="tab-instruments">Instruments & Payouts (<span id="tab-inst-count">0</span>)</button>
             <button class="tab-btn" data-tab="tab-transactions">Transactions (<span id="tab-tx-count">0</span>)</button>
+            <button class="tab-btn" data-tab="tab-audit">Action History</button>
           </div>
 
           <!-- Tab 1: Evidence & Investigation -->
@@ -276,6 +278,13 @@
               </thead>
               <tbody id="modal-tx-tbody"></tbody>
             </table>
+          </div>
+
+          <!-- Tab 6: Audit history -->
+          <div id="tab-audit" class="tab-panel" style="margin-top: 14px; max-height: 260px; overflow-y: auto;">
+            <div id="audit-history" class="audit-history">
+              <p class="audit-empty">No actions logged yet.</p>
+            </div>
           </div>
         </div>
       </div>

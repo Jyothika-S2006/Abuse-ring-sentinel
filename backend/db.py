@@ -28,6 +28,23 @@ Base = declarative_base()
 # ---------------------------------------------------------------------------
 # ORM Models
 # ---------------------------------------------------------------------------
+class AuditLog(Base):
+    """
+    Persistent record of every analyst action taken on a cluster.
+    This is what makes Confirm/Dismiss/Escalate actually auditable instead of
+    just changing a status field with no history.
+    """
+    __tablename__ = "audit_log"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    cluster_id = Column(String(64), ForeignKey("clusters.cluster_id"), nullable=False, index=True)
+    action = Column(String(32), nullable=False)          # "CONFIRMED_FRAUD" / "DISMISSED_LEGIT" / "ESCALATED"
+    previous_status = Column(String(32), nullable=True)
+    analyst_note = Column(Text, nullable=True)
+    timestamp = Column(
+        DateTime, nullable=False, default=lambda: datetime.now(timezone.utc)
+    )
+
 
 class Account(Base):
     __tablename__ = "accounts"

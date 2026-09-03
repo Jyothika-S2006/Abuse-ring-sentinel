@@ -200,6 +200,7 @@ async function openClusterModal(clusterId) {
 
     // Fetch and render agent investigation results
     fetchAndRenderInvestigation(clusterId);
+    loadAuditHistory(clusterId);
 
     // Show modal
     document.getElementById("investigation-modal").classList.add("active");
@@ -317,11 +318,41 @@ async function updateClusterStatus() {
     });
     if (!res.ok) throw new Error(`HTTP error ${res.status}`);
     const updated = await res.json();
+    await loadAuditHistory(clusterId);
     alert(`Status for ${clusterId} updated to: ${updated.status}`);
     loadClusters();
   } catch (err) {
     console.error("Failed to update status:", err);
     alert(`Error updating status: ${err.message}`);
+  }
+}
+
+async function loadAuditHistory(clusterId) {
+  const historyEl = document.getElementById("audit-history");
+  if (!historyEl) return;
+
+  try {
+    const res = await fetch(`/api/clusters/${clusterId}/audit`);
+    if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+    const history = await res.json();
+
+    if (history.length === 0) {
+      historyEl.innerHTML = '<p class="audit-empty">No actions logged yet.</p>';
+      return;
+    }
+
+    historyEl.innerHTML = history.map(entry => `
+      <div class="audit-entry">
+        <div>
+          <strong>${entry.action.replace(/_/g, " ")}</strong>
+          <span class="audit-previous">was ${entry.previous_status || "n/a"}</span>
+        </div>
+        <time class="audit-time">${new Date(entry.timestamp).toLocaleString()}</time>
+      </div>
+    `).join("");
+  } catch (err) {
+    console.error("Failed to load audit history:", err);
+    historyEl.innerHTML = '<p class="audit-empty">Action history unavailable.</p>';
   }
 }
 

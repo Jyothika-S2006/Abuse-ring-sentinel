@@ -15,6 +15,7 @@ from sqlalchemy.orm import Session
 
 from backend.db import (
     Account,
+    AuditLog,
     Cluster,
     ClusterMember,
     GraphEdge,
@@ -98,7 +99,7 @@ class ClusterDetailResponse(BaseModel):
 
 
 class UpdateClusterStatusRequest(BaseModel):
-    status: str = Field(..., description="Status: CONFIRMED_FRAUD, DISMISSED_LEGIT, or UNDER_INVESTIGATION")
+    status: str = Field(..., description="Status: CONFIRMED_FRAUD, DISMISSED_LEGIT, ESCALATED, or UNDER_INVESTIGATION")
     ai_summary: Optional[str] = None
 
 
@@ -304,7 +305,7 @@ def update_cluster_status(
             detail=f"Cluster '{cluster_id}' not found."
         )
 
-    valid_statuses = ["CONFIRMED_FRAUD", "DISMISSED_LEGIT", "UNDER_INVESTIGATION", "RESOLVED"]
+    valid_statuses = ["CONFIRMED_FRAUD", "DISMISSED_LEGIT", "ESCALATED", "UNDER_INVESTIGATION", "RESOLVED"]
     status_upper = req.status.upper()
     if status_upper not in valid_statuses:
         raise HTTPException(
@@ -312,10 +313,44 @@ def update_cluster_status(
             detail=f"Invalid status '{req.status}'. Must be one of {valid_statuses}"
         )
 
+    old_status = cluster.status
     cluster.status = status_upper
     if req.ai_summary:
         cluster.ai_summary = req.ai_summary
 
+    db.add(AuditLog(
+        cluster_id=cluster.cluster_id,
+        action=status_upper,
+        previous_status=old_status,
+        analyst_note=req.ai_summary,
+    ))
     db.commit()
     db.refresh(cluster)
     return cluster
+
+
+@router.get("/{cluster_id}/audit")
+def get_cluster_audit(cluster_id: str, db: Session = Depends(get_db)):
+    """Returns the status-change history for a cluster."""
+    cluster = db.query(Cluster).filter(Cluster.cluster_id == cluster_id).first()
+    if not cluster:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Cluster '{cluster_id}' not found."
+        )
+
+    logs = (
+        db.query(AuditLog)
+        .filter(AuditLog.cluster_id == cluster_id)
+        .order_by(AuditLog.timestamp.desc(), AuditLog.id.desc())
+        .all()
+    )
+    return [
+        {
+            "action": log.action,
+            "previous_status": log.previous_status,
+            "note": log.analyst_note,
+            "timestamp": log.timestamp.isoformat(),
+        }
+        for log in logs
+    ]
